@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Top_Level_Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>LCD_HD44780</Name>
+  <Identifier>44c3af54-69cf-4403-97ac-e415e1d7a578</Identifier>
+  <Description>Gathers software elements allowing to manage a LCD device drived by an HD44780.</Description>
+  <Packages />
+  <Types>
+    <Enumerated_Type>
+      <Name>E_LCD_Config_Font</Name>
+      <Identifier>57ca9492-d73a-44c6-85e9-1e31695f92fb</Identifier>
+      <Description />
+      <Enumerals>
+        <Enumeral>
+          <Name>LCD_CONFIG_FONT_5x8</Name>
+          <Identifier>7d9f142c-8686-4c57-8496-5c690b96e42e</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>LCD_CONFIG_FONT_5x10</Name>
+          <Identifier>35da921e-0bbf-48a0-b3b9-15bd5d280db1</Identifier>
+          <Description />
+        </Enumeral>
+      </Enumerals>
+    </Enumerated_Type>
+    <Enumerated_Type>
+      <Name>E_LCD_Config_Nb_Lines</Name>
+      <Identifier>143c3262-359b-4d83-816c-97e77c89635c</Identifier>
+      <Description />
+      <Enumerals>
+        <Enumeral>
+          <Name>LCD_CONFIG_NB_LINES_1</Name>
+          <Identifier>09485559-095d-47e3-96ba-fa22c10fe53b</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>LCD_CONFIG_NB_LINES_2</Name>
+          <Identifier>eba05a37-d00b-4e1a-bcb0-b13c34ec0d13</Identifier>
+          <Description />
+        </Enumeral>
+      </Enumerals>
+    </Enumerated_Type>
+    <Enumerated_Type>
+      <Name>E_LCD_Config_Nb_Columns</Name>
+      <Identifier>6a928a5b-aaba-44ee-9187-f679b02437a0</Identifier>
+      <Description />
+      <Enumerals>
+        <Enumeral>
+          <Name>LCD_CONFIG_NB_COLUMNS_8</Name>
+          <Identifier>2c808244-9f42-4302-b07c-124f5f2d210d</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>LCD_CONFIG_NB_COLUMNS_16</Name>
+          <Identifier>f2681a35-8509-4d74-bc4b-9a93c301865d</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>LCD_CONFIG_NB_COLUMNS_20</Name>
+          <Identifier>f2035489-284f-4519-9bde-c1d7bfc866aa</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>LCD_CONFIG_NB_COLUMNS_32</Name>
+          <Identifier>b1e80b38-7fc8-4988-b1df-407dbcddd40f</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>LCD_CONFIG_NB_COLUMNS_40</Name>
+          <Identifier>4b30a024-5939-4939-ab55-8e08ac9d1703</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>LCD_CONFIG_NB_COLUMNS_80</Name>
+          <Identifier>dcc8eca3-f83f-4111-b236-2d06054d58e4</Identifier>
+          <Description />
+        </Enumeral>
+      </Enumerals>
+    </Enumerated_Type>
+  </Types>
+  <Interfaces />
+  <Component_Types>
+    <Component_Type>
+      <Name>LCD_HD44780_4Bits</Name>
+      <Identifier>ece83a7f-e8d2-472e-8b71-f7954ef1493b</Identifier>
+      <Description>Allows to manage a LCD device controlled with an Hitachi HD44780 LCD controller.
+It uses the 4-bit mode of the controller.</Description>
+      <Configurations>
+        <Configuration_Parameter>
+          <Name>Font_Configuration</Name>
+          <Identifier>6d728ca3-d7b0-486f-84d5-6fc91b6a8c6c</Identifier>
+          <Description />
+          <Referenced_Type_Id>57ca9492-d73a-44c6-85e9-1e31695f92fb</Referenced_Type_Id>
+        </Configuration_Parameter>
+        <Configuration_Parameter>
+          <Name>Number_Lines_Configuration</Name>
+          <Identifier>8b302133-3e6d-44d6-a433-e0ec61ea4ea6</Identifier>
+          <Description />
+          <Referenced_Type_Id>143c3262-359b-4d83-816c-97e77c89635c</Referenced_Type_Id>
+        </Configuration_Parameter>
+        <Configuration_Parameter>
+          <Name>Number_Columns_Configuration</Name>
+          <Identifier>3f33e387-6451-4f9a-942c-1e0702ffea16</Identifier>
+          <Description />
+          <Referenced_Type_Id>6a928a5b-aaba-44ee-9187-f679b02437a0</Referenced_Type_Id>
+        </Configuration_Parameter>
+      </Configurations>
+      <Operations>
+        <OS_Operation>
+          <Name>Initialize</Name>
+          <Identifier>3e8735c5-b424-4343-a342-ae4fbde725fc</Identifier>
+          <Description />
+        </OS_Operation>
+      </Operations>
+      <Provider_Ports>
+        <Provider_Port>
+          <Name>Commands</Name>
+          <Identifier>c3ca426c-d54c-44a4-bc6a-a26517cdaa23</Identifier>
+          <Description />
+          <Referenced_Interface_Id>bba1b84b-c4db-44c7-bf9c-e375a85908a7</Referenced_Interface_Id>
+        </Provider_Port>
+        <Provider_Port>
+          <Name>Special_Character_Config</Name>
+          <Identifier>b1308683-8b39-4400-9aee-b3bd4c2575b2</Identifier>
+          <Description />
+          <Referenced_Interface_Id>aef4ccae-9bc5-4e63-bcdf-149edb15a2f0</Referenced_Interface_Id>
+        </Provider_Port>
+      </Provider_Ports>
+      <Requirer_Ports>
+        <Requirer_Port>
+          <Name>Register_Select_Pin</Name>
+          <Identifier>a3f9f8dd-7de1-4c2e-83f4-c78b56ba60ed</Identifier>
+          <Description />
+          <Referenced_Interface_Id>a330e264-839e-477e-840a-14fe8bf973d1</Referenced_Interface_Id>
+        </Requirer_Port>
+        <Requirer_Port>
+          <Name>Enable_Pin</Name>
+          <Identifier>e8d82045-42b0-42bc-be64-1b10db59b529</Identifier>
+          <Description />
+          <Referenced_Interface_Id>a330e264-839e-477e-840a-14fe8bf973d1</Referenced_Interface_Id>
+        </Requirer_Port>
+        <Requirer_Port>
+          <Name>Data_4_Pin</Name>
+          <Identifier>52bf39c2-486a-4f13-8877-755e24ab6844</Identifier>
+          <Description />
+          <Referenced_Interface_Id>a330e264-839e-477e-840a-14fe8bf973d1</Referenced_Interface_Id>
+        </Requirer_Port>
+        <Requirer_Port>
+          <Name>Data_5_Pin</Name>
+          <Identifier>ac111cb5-66d0-41d2-9411-e056ce5c4136</Identifier>
+          <Description />
+          <Referenced_Interface_Id>a330e264-839e-477e-840a-14fe8bf973d1</Referenced_Interface_Id>
+        </Requirer_Port>
+        <Requirer_Port>
+          <Name>Data_6_Pin</Name>
+          <Identifier>6433b86d-c231-44cb-ae16-33638be8c8cb</Identifier>
+          <Description />
+          <Referenced_Interface_Id>a330e264-839e-477e-840a-14fe8bf973d1</Referenced_Interface_Id>
+        </Requirer_Port>
+        <Requirer_Port>
+          <Name>Data_7_Pin</Name>
+          <Identifier>61383fc8-2fe6-4dee-83a6-a96e5b346a7d</Identifier>
+          <Description />
+          <Referenced_Interface_Id>a330e264-839e-477e-840a-14fe8bf973d1</Referenced_Interface_Id>
+        </Requirer_Port>
+        <Requirer_Port>
+          <Name>Backlight_Pin</Name>
+          <Identifier>c6e018b5-19b1-4317-b25c-4fb5433c3ca2</Identifier>
+          <Description />
+          <Referenced_Interface_Id>a330e264-839e-477e-840a-14fe8bf973d1</Referenced_Interface_Id>
+        </Requirer_Port>
+      </Requirer_Ports>
+    </Component_Type>
+  </Component_Types>
+  <Compositions />
+</Top_Level_Package>

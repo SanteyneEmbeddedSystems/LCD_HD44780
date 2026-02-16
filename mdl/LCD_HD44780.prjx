@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Software_Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>LCD_HD44780</Name>
+  <Identifier>9e515627-f958-46d0-a610-2fce7501ece5</Identifier>
+  <Description>A good description is always useful.</Description>
+  <Packages_References>
+    <Package_Reference>
+      <Last_Known_Name>LCD_HD44780</Last_Known_Name>
+      <Relative_Path>LCD_HD44780.pkgx</Relative_Path>
+      <Is_Writable>true</Is_Writable>
+    </Package_Reference>
+    <Package_Reference>
+      <Last_Known_Name>LCD_Interfaces</Last_Known_Name>
+      <Relative_Path>..\..\LCD_Interfaces\mdl\LCD_Interfaces.pkgx</Relative_Path>
+      <Is_Writable>false</Is_Writable>
+    </Package_Reference>
+    <Package_Reference>
+      <Last_Known_Name>Hardware_IO_Interfaces</Last_Known_Name>
+      <Relative_Path>..\..\Hardware_IO_Interfaces\mdl\Hardware_IO_Interfaces.pkgx</Relative_Path>
+      <Is_Writable>false</Is_Writable>
+    </Package_Reference>
+  </Packages_References>
+</Software_Project>
